@@ -1,0 +1,85 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: rgba(59, 230, 221, 0.466);
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor-principal{
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(67, 235, 109);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.contenedor-principal img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+h1, h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.seccion-tiempo{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.caja-tiempo{
+    background-color: #ffffffe3;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 10px 10px rgb(0, 0, 0);
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .contenedor-principal {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .contenedor-principal img {
+        height: auto;
+    }
+
+    .seccion-tiempo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja-tiempo {
+        width: 100%;
+        margin-bottom: 10px;
+        box-shadow: 1px 5px rgb(0, 0, 0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-principal {
+        max-width: 80%;
+    }
+
+    .seccion-tiempo {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .caja-tiempo {
+        width: 160px;
+    }
+}
